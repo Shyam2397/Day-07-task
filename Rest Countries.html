@@ -15,64 +15,64 @@
        //a.  Get all the countries from the Asia continent /region using the Filter function
         
        
-    //    function Data(){
-    //         let data=JSON.parse(this.responseText);
+       function Data(){
+            let data=JSON.parse(this.responseText);
 
-    //         let asia=data.filter((element)=>{
-    //             if(element.region==='Asia'){
-    //                 return element.name;
-    //             }
-    //         })
-    //         console.log(asia)
-    //     }      
+            let asia=data.filter((element)=>{
+                if(element.region==='Asia'){
+                    return element.name;
+                }
+            })
+            console.log(asia)
+        }      
             
     //     //b. Get all the countries with a population of less than 2 lakhs using Filter function
         
-        // function Data(){
-        //     let data=JSON.parse(this.responseText);
-        //     let pop =data.filter((element)=>{
-        //         return element.population<200000
-        //     });
-        //     console.log(pop)
-        // }
+        function Data(){
+            let data=JSON.parse(this.responseText);
+            let pop =data.filter((element)=>{
+                return element.population<200000
+            });
+            console.log(pop)
+        }
 
         //c. Print the following details name, capital, flag using forEach function
 
 
-        // function Data(){
-        //     let data=JSON.parse(this.responseText);
-        //     data.forEach(element =>{
-        //         console.log(element.name.common,'-',element.capital,'-',element.flag)
-        //     })
-        //     }
+        function Data(){
+            let data=JSON.parse(this.responseText);
+            data.forEach(element =>{
+                console.log(element.name.common,'-',element.capital,'-',element.flag)
+            })
+            }
 
         //d. Print the total population of countries using reduce function
         
         
-        // function Data(){
-        //     let data=JSON.parse(this.responseText);
-        //     let sumofpop=data.reduce((acc,element)=>{
-        //         return acc+element.population;
-        //     });0
-        //     console.log(sumofpop);
-        // }
+        function Data(){
+            let data=JSON.parse(this.responseText);
+            let sumofpop=data.reduce((acc,element)=>{
+                return acc+element.population;
+            });0
+            console.log(sumofpop);
+        }
 
 
         //e. Print the country which uses US Dollars as currency
 
 
-        // function Data(){
-        //     let data=JSON.parse(this.responseText);
-        //     let curr=[]
-        //     for(let i=0;i<data.length;i++)
-        //         if(data[i].currencies !==undefined){
-        //             return false;
-        //         }else{
-        //             if (data[i].currencies === 'USD') {
-        //              console.log(curr.push(data[i].currencies))   
-        //             }
-        //         }
-        //          }
+        function Data(){
+            let data=JSON.parse(this.responseText);
+            let curr=[]
+            for(let i=0;i<data.length;i++)
+                if(data[i].currencies !==undefined){
+                    return false;
+                }else{
+                    if (data[i].currencies === 'USD') {
+                     console.log(curr.push(data[i].currencies))   
+                    }
+                }
+                 }
             
             
         const req = new XMLHttpRequest();
